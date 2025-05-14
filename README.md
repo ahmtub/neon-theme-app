@@ -60,18 +60,24 @@ With Neon Dark Expressive, personalization meets visual power. Whether you're a 
 Pull requests are welcome!
 Feel free to open issues or suggest features 🚀
 
+---
 
+## 📥 Download APK
 
- 📥 Download APK
-
-[👉 Download Neon Dark Expressive APK](https://expo.dev/accounts/seranodanwow/projects/neon-theme-app/builds/432db58d-8033-410a-8c39-dae674804573)
+👉 **[Download Neon Dark Expressive APK](https://expo.dev/accounts/seranodanwow/projects/neon-theme-app/builds/432db58d-8033-410a-8c39-dae674804573)**
 
 > ⚠️ Make sure to enable *"Install from unknown sources"* on your Android device.
 
+---
 
+## 📜 License
 
-📜 License
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
-👨‍💻 Developed by Ahmet ŞEN (@ahmtub)
-Inspired by 2025's most expressive UI trends. Made with ❤️ using React Native + Expo.
+---
+
+## 👨‍💻 Developed by **Ahmet ŞEN**  
+[@ahmtub](https://github.com/ahmtub)
+
+> Inspired by 2025's most expressive UI trends.  
+> Made with ❤️ using **React Native + Expo**.
