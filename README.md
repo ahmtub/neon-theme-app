@@ -66,7 +66,9 @@ Feel free to open issues or suggest features 🚀
 
 You can try the app on your Android device by downloading the latest build:
 
-👉[Download Neon Dark Expressive APK](https://expo.dev/accounts/seranodanwow/projects/neon-theme-app/builds/432db58d-8033-410a-8c39-dae674804573)
+[Download Neon Dark Expressive APK](https://expo.dev/accounts/seranodanwow/projects/neon-theme-app/builds/432db58d-8033-410a-8c39-dae674804573)
+
+
 
 > Note: Make sure to enable **"Install from unknown sources"** on your device.
 
