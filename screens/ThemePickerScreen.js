@@ -7,6 +7,10 @@ export default function ThemePickerScreen() {
   const { theme, updateThemeColor } = useContext(ThemeContext);
   const [color, setColor] = useState(theme.primary);
 
+  useEffect(() => {
+    setColor(theme.primary); // ilk açıldığında mevcut rengi ayarla
+  }, [theme.primary]);
+
   return (
     <View style={[styles.container, { backgroundColor: theme.background }]}>
       <Text style={styles.title}>🎨 Tema Rengini Seç</Text>
@@ -32,7 +36,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    color: '#fff',
+    color: '#ffffff',
     marginBottom: 20
   }
 });
