@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { View, Text, StyleSheet, Alert } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 import WheelColorPicker from 'react-native-wheel-color-picker';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -8,8 +8,12 @@ export default function ThemePickerScreen() {
   const [color, setColor] = useState(theme.primary);
 
   useEffect(() => {
-    setColor(theme.primary); // ilk açıldığında mevcut rengi ayarla
+    setColor(theme.primary); // sayfa açıldığında mevcut renk gelsin
   }, [theme.primary]);
+
+  const handleSave = () => {
+    updateThemeColor(color);
+  };
 
   return (
     <View style={[styles.container, { backgroundColor: theme.background }]}>
@@ -19,11 +23,13 @@ export default function ThemePickerScreen() {
         initialColor={color}
         onColorChangeComplete={(selectedColor) => {
           setColor(selectedColor);
-          updateThemeColor(selectedColor);
-          Alert.alert('Tema Kaydedildi', `Yeni renk: ${selectedColor}`);
         }}
         style={{ width: 300, height: 300 }}
       />
+
+      <View style={styles.buttonContainer}>
+        <Button title="KAYDET" onPress={handleSave} color={theme.primary} />
+      </View>
     </View>
   );
 }
@@ -38,5 +44,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: '#ffffff',
     marginBottom: 20
+  },
+  buttonContainer: {
+    marginTop: 30,
+    width: 200
   }
 });
