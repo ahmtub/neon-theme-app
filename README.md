@@ -35,6 +35,13 @@
 
 ---
 
+📥 **[👉 Download Neon Dark Expressive APK](https://expo.dev/accounts/seranodanwow/projects/neon-theme-app/builds/432db58d-8033-410a-8c39-dae674804573)**
+
+> ⚠️ Warning: To install the APK, make sure to enable **"Install from unknown sources"** on your Android device.  
+> Go to: Settings > Security > Unknown Sources (this may vary depending on your device)
+
+
+---
 ## 📦 Build
 
 ```bash
@@ -59,15 +66,6 @@ With Neon Dark Expressive, personalization meets visual power. Whether you're a 
 🤝 Contributions
 Pull requests are welcome!
 Feel free to open issues or suggest features 🚀
-
----
-
-<a href="https://expo.dev/accounts/seranodanwow/projects/neon-theme-app/builds/432db58d-8033-410a-8c39-dae674804573" target="_blank">
-  <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android" alt="Download APK">
-</a>
-
-
-> ⚠️ Make sure to enable *"Install from unknown sources"* on your Android device.
 
 ---
 
