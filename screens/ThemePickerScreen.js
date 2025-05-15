@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import WheelColorPicker from 'react-native-wheel-color-picker';
 import { ThemeContext } from '../context/ThemeContext';
+import NeonButton from '../components/NeonButton';
 
 export default function ThemePickerScreen() {
   const { theme, updateThemeColor } = useContext(ThemeContext);
   const [color, setColor] = useState(theme.primary);
 
   useEffect(() => {
-    setColor(theme.primary); // sayfa açıldığında mevcut renk gelsin
+    setColor(theme.primary);
   }, [theme.primary]);
 
   const handleSave = () => {
@@ -27,9 +28,7 @@ export default function ThemePickerScreen() {
         style={{ width: 300, height: 300 }}
       />
 
-      <View style={styles.buttonContainer}>
-        <Button title="KAYDET" onPress={handleSave} color={theme.primary} />
-      </View>
+      <NeonButton title="KAYDET" onPress={handleSave} />
     </View>
   );
 }
@@ -38,15 +37,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    paddingTop: 80
+    paddingTop: 80,
   },
   title: {
     fontSize: 24,
     color: '#ffffff',
-    marginBottom: 20
+    marginBottom: 20,
   },
-  buttonContainer: {
-    marginTop: 30,
-    width: 200
-  }
 });
