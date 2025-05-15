@@ -7,7 +7,18 @@ export default function NeonButton({ title, onPress }) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <TouchableOpacity style={[styles.button, { shadowColor: theme.primary, borderColor: theme.primary }]} onPress={onPress}>
+    <TouchableOpacity
+      style={[
+        styles.button,
+        {
+          shadowColor: theme.primary,
+          borderColor: theme.primary,
+          backgroundColor: 'transparent',
+        },
+      ]}
+      activeOpacity={0.8}
+      onPress={onPress}
+    >
       <Text style={[styles.text, { color: theme.primary }]}>{title}</Text>
     </TouchableOpacity>
   );
@@ -19,16 +30,22 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingVertical: 12,
     paddingHorizontal: 24,
-    backgroundColor: '#1e1e2f',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.9,
-    shadowRadius: 10,
+    shadowRadius: 12,
     elevation: 5,
-    marginTop: 16
+    marginTop: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 200,
+    alignSelf: 'center',
   },
   text: {
     fontSize: 18,
     fontWeight: 'bold',
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+    textShadowColor: '#000',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 4,
+  },
 });
